@@ -2,5 +2,5 @@ services:
   - type: web
     name: bwp401
     runtime: static
-    buildCommand: mkdir -p dist && cp ./*.html dist/ && cp -R assets dist/
+    buildCommand: bash build.sh
     staticPublishPath: ./dist

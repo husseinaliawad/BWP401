@@ -43,11 +43,12 @@ git push -u origin main
 | --- | --- |
 | Branch | الفرع الذي رفعت عليه المشروع، عادةً `main` |
 | Root Directory | اتركه فارغاً إذا كان المشروع في جذر المستودع |
-| Build Command | `mkdir -p dist && cp ./*.html dist/ && cp -R assets dist/` |
+| Build Command | `bash build.sh` |
 | Publish Directory | `dist` |
 
 المشروع جاهز كملفات ثابتة ولا يحتاج أمر تشغيل أو متغيرات بيئة.
-أمر البناء يعمل داخل بيئة Render ويجمع صفحات HTML ومجلد `assets` داخل `dist`.
+ملف `build.sh` يعمل داخل بيئة Render ويجمع صفحات HTML ومجلد `assets` داخل `dist`.
+ارفع هذا الملف مع بقية التعديلات إلى GitHub قبل بدء النشر. خانة Build Command تحتوي `bash build.sh` فقط.
 مجلدا `dist` و`output` مستثنيان من Git؛ Render ينشئ `dist` أثناء النشر.
 
 نموذج التواصل الحالي تعليمي ويتحقق من المدخلات داخل المتصفح فقط؛ الاستضافة وحدها لا تضيف إرسال بريد.
