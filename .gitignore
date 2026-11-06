@@ -1,0 +1,21 @@
+# Generated site and local output
+/dist/
+/output/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor settings and temporary files
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

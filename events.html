@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="لمّة، دليل تجريبي لفعاليات الجامعة الافتراضية السورية. اكتشف لقاءات الثقافة والتقنية والرياضة والفنون.">
+  <meta name="theme-color" content="#164e40">
+  <title>كل الفعاليات | لمّة — دليل فعاليات الجامعة</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <!-- Bootstrap RTL عبر CDN مع نسخة محلية احتياطية للعمل دون اتصال. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous" onerror="this.onerror=null;this.removeAttribute('integrity');this.removeAttribute('crossorigin');this.href='assets/vendor/bootstrap.rtl.min.css'">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" onerror="var s=document.createElement('script');s.src='assets/vendor/bootstrap.bundle.min.js';document.head.appendChild(s)"></script>
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="events">
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+  <noscript><div class="no-js">فعّل JavaScript لعرض بطاقات الفعاليات واستخدام البحث والتقويم ونموذج التواصل.</div></noscript>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="التنقل الرئيسي">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="لمّة، الصفحة الرئيسية">
+          <img class="brand-symbol" src="assets/img/logo.svg" alt="" width="46" height="46">
+          <span><span class="brand-name">لَمّة<span style="color:#92ac5a">.</span></span><span class="brand-subtitle">دليل فعاليات الجامعة الافتراضية</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="فتح قائمة التنقل"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto"><li class="nav-item"><a class="nav-link "  href="index.html">الرئيسية</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="events.html">الفعاليات</a></li><li class="nav-item"><a class="nav-link "  href="about.html">عن الدليل</a></li><li class="nav-item"><a class="nav-link "  href="contact.html">اتصل بنا</a></li></ul>
+          <div class="header-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="تفعيل الوضع الداكن" aria-pressed="false">☾</button><a class="btn btn-primary btn-sm" href="events.html">اكتشف الفعاليات <span aria-hidden="true">↖</span></a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main"><section class="page-intro"><div class="container"><nav aria-label="مسار الصفحة"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li><li class="breadcrumb-item active" aria-current="page">موعدك مع تجربة جديدة</li></ol></nav><span class="eyebrow">أجندة لمّة</span><h1>موعدك مع تجربة جديدة</h1><p class="lead-text">من أول فكرة إلى آخر تصفيق. تصفّح الفعاليات واختر ما يناسب اهتمامك ووقتك.</p></div></section>
+<section class="pb-5" aria-label="البحث في الفعاليات"><div class="container">
+  <form id="filters" class="filter-panel" role="search"><div class="row g-3">
+    <div class="col-lg-4 col-md-6"><label class="form-label" for="search">عن ماذا تبحث؟</label><input class="form-control" id="search" name="q" type="search" placeholder="عنوان، وصف، أو مكان الفعالية..."></div>
+    <div class="col-lg-2 col-md-6"><label class="form-label" for="category">التصنيف</label><select class="form-select" id="category" name="category"><option value="">كل الاهتمامات</option></select></div>
+    <div class="col-lg-3 col-md-6"><label class="form-label" for="date">التاريخ</label><input class="form-control" id="date" name="date" type="date"></div>
+    <div class="col-lg-3 col-md-6"><label class="form-label" for="city">الموقع</label><select class="form-select" id="city" name="city"><option value="">كل المواقع</option><option>دمشق</option><option>حلب</option><option>حمص</option><option>عن بُعد</option></select></div>
+  </div><div class="filter-bottom"><small>تُحدّث النتائج مباشرة عند تغيير أي خيار.</small><div class="utility-row"><label class="form-check-label small" for="remember"><input class="form-check-input me-1" id="remember" type="checkbox"> تذكّر التصنيف على هذا الجهاز</label><button class="btn btn-outline-primary btn-sm" type="reset">مسح الفلاتر ↺</button></div></div></form>
+</div></section>
+<section class="pb-5" aria-labelledby="results-title"><div class="container"><div class="results-bar"><h2 class="h5 m-0" id="results-title">الفعاليات المتاحة</h2><span class="results-count" id="results-count" role="status" aria-live="polite"></span></div><div class="row g-4" id="events-grid"></div><div class="empty-state" id="empty-state" hidden><span class="category-icon green" aria-hidden="true">⌕</span><h3>لم نجد فعالية بهذه الخيارات</h3><p>جرّب كلمة أقصر أو وسّع نطاق البحث.</p><button type="button" class="btn btn-primary" id="clear-filters">عرض كل الفعاليات</button></div></div></section>
+<section class="pb-5" aria-labelledby="events-note-title"><div class="container"><div class="info-strip"><b id="events-note-title">مساحة للتجربة والتعلّم ↖</b><p>المواعيد والمواقع بيانات تعليمية افتراضية، وجميع الفعاليات المعروضة مجانية ضمن نموذج المشروع. لا تمثل هذه الأجندة إعلانًا رسميًا للجامعة.</p></div></div></section>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5 col-md-6"><a class="navbar-brand" href="index.html"><img class="brand-symbol" src="assets/img/logo.svg" alt="" width="46" height="46"><span><span class="brand-name">لَمّة.</span><span class="brand-subtitle">دليل فعاليات الجامعة الافتراضية</span></span></a><p>لأن الجامعة أكثر من محاضرة. مساحة نلتقي فيها، نتعلّم، ونصنع ذكريات تستحق أن نشاركها.</p></div>
+        <div class="col-lg-3 col-md-6"><h2>خطوتك التالية</h2><div class="footer-links"><a href="events.html">استكشف الفعاليات</a><a href="about.html">تعرّف إلى الدليل</a><a href="about.html#policies">معايير النشر</a><a href="contact.html">اقترح فعالية</a></div></div>
+        <div class="col-lg-4 col-md-6"><h2>نبقى على تواصل</h2><div class="footer-links"><a href="mailto:events@example.com" dir="ltr">events@example.com</a><a href="https://svuonline.org/" target="_blank" rel="noopener noreferrer">موقع الجامعة الافتراضية السورية ↗</a></div><div class="social-links"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="زيارة منصة فيسبوك، تبويب جديد">فيسبوك ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="زيارة منصة لينكدإن، تبويب جديد">لينكدإن ↗</a></div><p class="mb-0">بريد وروابط توضيحية ضمن مشروع تعليمي.</p></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> لمّة · مشروع مقرر BWP401</span><span>دليل طلابي تجريبي؛ جميع الفعاليات واللقاءات المعروضة افتراضية.</span></div>
+    </div>
+  </footer>
+  <button class="to-top" id="to-top" type="button" aria-label="العودة إلى أعلى الصفحة" hidden>↑</button>
+</body>
+</html>
